@@ -70,14 +70,20 @@
 		}
 
 		caption { 
-			color: #F8DEEA;
-			font-size: 35px; 
-			caption-side: top;
+			color: #042469;
+			font-size: 16px; 
+			font-style: italic;
+			caption-side: bottom;
 			text-align: left;
 			padding-top: 15px;
 		}
 
-		td { text-align: center; border-style: solid; border-color: #acacac; border-width: 0 1px 1px 0 }
+		td { 
+			text-align: center; 
+			/*border-style: solid; 
+			border-color: #acacac; 
+			border-width: 0 1px 1px 0;*/
+ 	   	}
 		th.time { font-size: 11px }
 		th.heading { font-size: 11px; text-align: center }
 		td.break { font-size: 11px }
@@ -85,7 +91,8 @@
 		a#register { font-size: 32px }
 		a#volunteer { font-size: 32px }
 		a#questions { font-size: 32px }
-
+ 
+		#twitter-widget-0 { width: 100% !important; height: 250px !important }
 	</style>
 </head>
 <body>
@@ -127,13 +134,25 @@
 
 <div id="news" class="row">
 	<div class="columns white">
-		<h4>follow on Twitter: <a href="twitter.com/pythonquants">@pythonquants</a></h4>
+		<h4>follow on Twitter <a href="twitter.com/pythonquants">@pythonquants</a>:</h4>
+	</div>
+</div>
 
-		<a class="twitter-timeline"  href="https://twitter.com/pythonquants"  data-widget-id="423347670002851840">Tweets by @pythonquants</a>
-    	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div class="row">
+	<div class="small-9 small-centered columns white">
+		<a width="600" class="twitter-timeline"  href="https://twitter.com/pythonquants"  data-widget-id="423347670002851840">Tweets by @pythonquants</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+</div>
 
+<div class="row">
+	<div class="columns white">
 		<h4>subscribe (for news and announcements): </h4>
+	</div>
+</div>
 
+<div class="row">
+	<div class="small-9 small-centered columns white">
 		<!-- Begin MailChimp Signup Form -->
 		<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 		<style type="text/css">
@@ -155,79 +174,89 @@
 </div>
 
 <div id="schedule" class="row">
-	<div class="columns black">
-		<section class="schedule">
-			<table>
-				<caption>schedule:</caption>
-				<thead>
-					<tr>
-						<th width="160" class="time"></th>
-						<th width="500" class="heading">talks</th>
-						<th width="300" class="heading">workshops</th>
-					</tr>
-				</thead>
-				</tbody>
-					<tr>
-						<th class="time">8:00 am - 9:00 am</th>
-						<td colspan="2"><b>keynote: Kirat Singh</b></td>
-					</tr>
-					<tr>
-						<th class="time">9:00 am - 9:30 am</th>
-						<td class="break" colspan="2">breakfast</td>
-					</tr>
-					<tr>
-						<th class="time">9:30 am - 10:30 am</th>
-						<td>Dr Yves Hilpisch</td>
-						<td rowspan="2">introduction to Python for C++ and Java programmers</td>
-					</tr>
-					<tr>
-						<th class="time">10:30 am - 11:30 am</th>
-						<td>Ben Lerner, Data Nitro</td>
-					</tr>
-					<tr>
-						<th class="time">11:30 am - 12:30 pm</th>
-						<td class="break" colspan="2">lunch</td>
-					</tr>
-					<tr>
-						<th class="time">12:30 pm - 1:30 pm</th>
-						<td>Dr Jared Lander</td>
-						<td>analysis tools in Python: pandas, numpy, scipy</td>
-					</tr>
-					<tr>
-						<th class="time">1:30 pm - 2:30 pm</th>
-						<td>TBD</td>
-						<td>advanced Python programming</td>
-					</tr>
-					<tr>
-						<th class="time">2:30 pm - 3:00 pm</th>
-						<td class="break" colspan="2">coffee</td>
-					</tr>
-					<tr>
-						<th class="time">3:00 pm - 4:00 pm</th>
-						<td>TBD</td>
-						<td>financial modelling with Python</td>
-					</tr>
-					<tr>
-						<th class="time">4:00 pm - 5:00 pm</th>
-						<td colspan="2">panel discussion & closing notes</td>
-					</tr>
-					<tr>
-						<th class="time" colspan="3">&nbsp;</th>
-					</tr>
-					<tr>
-						<th class="time">7:30 pm</th>
-						<td colspan="2">cocktail reception (TBD)</td>
-					</tr>
-				</tbody>
-			</table>
+	<div class="columns white">
+		<h4>schedule:</h4>
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-9 small-centered columns white">
+		<table>
+			<caption>Subscribe above for updates.</caption>
+			<thead>
+				<tr>
+					<th width="160" class="time"></th>
+					<th width="500" class="heading">talks</th>
+					<th width="300" class="heading">workshops</th>
+				</tr>
+			</thead>
+			</tbody>
+				<tr>
+					<th class="time">8:00 am - 9:00 am</th>
+					<td colspan="2"><b>keynote: Kirat Singh</b></td>
+				</tr>
+				<tr>
+					<th class="time">9:00 am - 9:30 am</th>
+					<td class="break" colspan="2">breakfast</td>
+				</tr>
+				<tr>
+					<th class="time">9:30 am - 10:30 am</th>
+					<td>Dr Yves Hilpisch</td>
+					<td rowspan="2">introduction to Python for C++ and Java programmers</td>
+				</tr>
+				<tr>
+					<th class="time">10:30 am - 11:30 am</th>
+					<td>Ben Lerner, Data Nitro</td>
+				</tr>
+				<tr>
+					<th class="time">11:30 am - 12:30 pm</th>
+					<td class="break" colspan="2">lunch</td>
+				</tr>
+				<tr>
+					<th class="time">12:30 pm - 1:30 pm</th>
+					<td>Dr Jared Lander</td>
+					<td>analysis tools in Python: pandas, numpy, scipy</td>
+				</tr>
+				<tr>
+					<th class="time">1:30 pm - 2:30 pm</th>
+					<td>TBA</td>
+					<td>advanced Python programming</td>
+				</tr>
+				<tr>
+					<th class="time">2:30 pm - 3:00 pm</th>
+					<td class="break" colspan="2">coffee</td>
+				</tr>
+				<tr>
+					<th class="time">3:00 pm - 4:00 pm</th>
+					<td>TBA</td>
+					<td>financial modelling with Python</td>
+				</tr>
+				<tr>
+					<th class="time">4:00 pm - 5:00 pm</th>
+					<td colspan="2">panel discussion & closing notes</td>
+				</tr>
+				<tr>
+					<th class="time" colspan="3">&nbsp;</th>
+				</tr>
+				<tr>
+					<th class="time">7:30 pm</th>
+					<td colspan="2">cocktail reception (TBA)</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>
 
 <div id="venue" class="row">
 	<div class="columns white">
 		<h4>venue:</h4>
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-9 small-centered columns white">
  	   	<h5>Executive Conference Center, 1601 Broadway, New York, NY, 10019</h5>
-		<iframe width="960" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Executive+Conference+Center,+1601+Broadway,+New+York,+NY,+10019&amp;hl=en&amp;sll=40.697488,-73.979681&amp;sspn=0.656979,0.75119&amp;hq=Executive+Conference+Center,&amp;hnear=1601+Broadway,+New+York,+10019&amp;t=m&amp;ie=UTF8&amp;cid=2681318677231784850&amp;ll=40.760431,-73.98512&amp;spn=0.0026,0.006866&amp;z=17&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?q=Executive+Conference+Center,+1601+Broadway,+New+York,+NY,+10019&amp;hl=en&amp;sll=40.697488,-73.979681&amp;sspn=0.656979,0.75119&amp;hq=Executive+Conference+Center,&amp;hnear=1601+Broadway,+New+York,+10019&amp;t=m&amp;ie=UTF8&amp;cid=2681318677231784850&amp;ll=40.760431,-73.98512&amp;spn=0.0026,0.006866&amp;z=17&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+		<iframe width="720" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Executive+Conference+Center,+1601+Broadway,+New+York,+NY,+10019&amp;hl=en&amp;sll=40.697488,-73.979681&amp;sspn=0.656979,0.75119&amp;hq=Executive+Conference+Center,&amp;hnear=1601+Broadway,+New+York,+10019&amp;t=m&amp;ie=UTF8&amp;cid=2681318677231784850&amp;ll=40.760431,-73.98512&amp;spn=0.0026,0.006866&amp;z=17&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?q=Executive+Conference+Center,+1601+Broadway,+New+York,+NY,+10019&amp;hl=en&amp;sll=40.697488,-73.979681&amp;sspn=0.656979,0.75119&amp;hq=Executive+Conference+Center,&amp;hnear=1601+Broadway,+New+York,+10019&amp;t=m&amp;ie=UTF8&amp;cid=2681318677231784850&amp;ll=40.760431,-73.98512&amp;spn=0.0026,0.006866&amp;z=17&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
 	</div>
 </div>
 
@@ -250,8 +279,23 @@
 <div id="about" class="row">
 	<div class="columns white">
 		<h4>want to volunteer?</h4>
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-9 small-centered columns white">
 		<h5><a href="mailto:volunteers@forpythonquants.com">volunteers@forpythonquants.com<a/></h5>
+	</div>
+</div>
+
+<div id="venue" class="row">
+	<div class="columns white">
 		<h4>questions?</h4>
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-9 small-centered columns white">
 		<h5><a href="mailto:info@forpythonquants.com">info@forpythonquants.com<a/></h5>
 	</div>
 </div>
