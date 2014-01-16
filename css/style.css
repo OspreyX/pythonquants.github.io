@@ -68,15 +68,23 @@ caption {
 	padding-top: 15px;
 }
 
-td { 
-	text-align: center; 
-	/*border-style: solid; 
-	border-color: #acacac; 
-	border-width: 0 1px 1px 0;*/
-   	}
-th.time { font-size: 11px }
-th.heading { font-size: 11px; text-align: center }
-td.break { font-size: 11px }
+
+table td {
+	padding: 15px 0 !important;
+	text-align: center;
+}
+th.time {
+	font-size: 16px;
+	color: #333;
+	font-weight: 200;
+}
+th.heading {
+	font-size: 24px;
+	letter-spacing: -0.1em;
+	color: #555;
+	text-align: center;
+}
+td.break { color: #888; letter-spacing: 1em; }
 
 a#register { font-size: 32px }
 a#volunteer { font-size: 32px }
@@ -109,6 +117,7 @@ a#questions { font-size: 32px }
 	font-size: 16px;
 	font-weight: 200;
 	opacity: .6;
+	line-height: 1.3em;
 }
 
 body > .row {
@@ -231,11 +240,16 @@ body > .row + .row {
 }
 
 
-nav.magic_float {
+.magic_float {
 	position: absolute;
 	z-index: 100;
 	width: 100%;
-	height: 50px;
+	height: 70px;
+}
+
+.magic_float > nav {
+	width: inherit;
+	height: inherit;
 	background: rgba(242, 246, 255, 0.95);
 	line-height: 1.3em;
 	font-size: 20px;
@@ -243,36 +257,81 @@ nav.magic_float {
 	text-align: center;
 }
 
-nav.magic_float > a {
+.magic_float > nav > a {
 	display: inline-block;
-	height: 26px;
-	padding: 12px 30px;
+	height: 70px;
+	padding: 22px 40px;
+	box-shadow: 0 0 5px 1px rgba(255,255,255,0);
+	-webkit-transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
+	-moz-transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
+	transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-nav.magic_float > a.active {
-	font-weight: bold;
+.magic_float > nav > a:hover {
+	background: white;
+	box-shadow: 0 1px 10px 2px rgba(255,255,255,.3);
 }
 
-nav.magic_float.floating {
+.magic_float.floating {
 	position: fixed;
 	left: 0;
 	top: 0;
 }
 
-
-.button {
-	background-color: #3772a3;
+.magic_float > .shadow {
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	width: inherit;
+	height: 3px;
+	background-image: -webkit-radial-gradient(ellipse at top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%);
+	background-image: -moz-radial-gradient(ellipse at top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%);
+	background-image: -ms-radial-gradient(ellipse at top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%);
+	background-image: radial-gradient(ellipse at top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%);
+	opacity: 0;
 	-webkit-transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
-	-moz-transition: all .4s cubic-bezier(0.19, 1, 0.22, 1;
+	-moz-transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
 	transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.button:hover {
-	background-color: #5e9cd0;
+
+.magic_float.floating > .shadow {
+	opacity: .5;
 }
 
 
+form .button,
+form input[type=email] {
+	-webkit-transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
+	-moz-transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
+	transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+form .button {
+	background-color: #3772a3 !important;
+}
+.button:hover {
+	background-color: #5e9cd0 !important;
+}
+
+form input[type=email]:focus {
+	background: white;
+	box-shadow: 0 0 10px white;
+	border-color: white;
+}
 
 
+a.anchor {
+	position: relative;
+	top: -100px;
+	margin-top: -100px;
+}
+
+.email_with_style {
+	display: block;
+	padding-top: 7px;
+	font-size: 20px;
+	letter-spacing: 0.1em;
+}
 
 
 

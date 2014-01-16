@@ -20,14 +20,17 @@
 			</div>
 		</div>
 		
-		<nav class="magic_float">
-			<a href="#news">news</a>
-			<a href="#schedule">schedule</a>
-			<a href="#venue">venue</a>
-			<a href="#about">about</a>
-		</nav>
+		<div class="magic_float">
+			<nav>
+				<a href="#register">register</a>
+				<a href="#schedule">schedule</a>
+				<a href="#venue">venue</a>
+				<a href="#about">about</a>
+			</nav>
+			<div class="shadow"></div>
+		</div>
 		
-		<div class="row">
+		<div class="row" id="anchor-register">
 			<a class="magic_arrow eventbrite" href="http://pythonquants.eventbrite.com/" rel="external">
 				<span class="caption">register</span>
 				<span class="url">pythonquants.eventbrite.com</span>
@@ -39,10 +42,12 @@
 			<div class="hover_title">
 				follow on Twitter <a href="twitter.com/pythonquants">@pythonquants</a>
 			</div>
+			
 			<div class="used-to-be-small-9 small-centered columns white">
 				<a width="600" class="twitter-timeline"  href="https://twitter.com/pythonquants"  data-widget-id="423347670002851840">Tweets by @pythonquants</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</div>
+			
 		</div>
 		
 		<div class="row">
@@ -60,7 +65,7 @@
 				</style>
 				<div id="mc_embed_signup">
 				<form action="http://forpythonquants.us3.list-manage.com/subscribe/post?u=0c7ae721029c30a7a861ddc3c&amp;id=82593c5acd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-					<input type="email" style="width: 615px; float: left; height: 50px; font-size: 26px; font-weight: 200;" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+					<input type="email" style="width: 615px; float: left; height: 50px; font-size: 26px; font-weight: 200;" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address..." required>
 					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 					<div style="position: absolute; left: -5000px;"><input type="text" name="b_0c7ae721029c30a7a861ddc3c_82593c5acd" value=""></div>
 					<div class="clear"><input type="submit" style="height: 50px; width: 135px; text-transform: lowercase; font-size: 18px; padding: 10px;" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
@@ -71,18 +76,17 @@
 			</div>
 		</div>
 		
-		<div class="row">
+		<div class="row" id="anchor-schedule">
 			<div class="hover_title">
 				schedule
 			</div>
 			<div class="used-to-be-small-9 small-centered columns white">
-				<table>
-					<caption>Subscribe above for updates.</caption>
+				<table cellspacing="1">
 					<thead>
 						<tr>
-							<th width="160" class="time"></th>
-							<th width="500" class="heading">talks</th>
-							<th width="300" class="heading">workshops</th>
+							<th width="260" class="time"></th>
+							<th width="350" class="heading">talks</th>
+							<th width="350" class="heading">workshops</th>
 						</tr>
 					</thead>
 					</tbody>
@@ -142,14 +146,20 @@
 			</div>
 		</div>
 		
-		<div class="row">
+		<div class="row" id="anchor-venue">
 			<div class="hover_title">
-				venue
+				venue<br /><br />
+				<span class="small">Executive<br />Conference<br />Center<br /><br />
+				1601 Broadway,<br />
+				New York, NY,<br />
+				10019</span>
 			</div>
+			
 			<div class="used-to-be-small-9 small-centered columns white">
-		 	   	<h5>Executive Conference Center, 1601 Broadway, New York, NY, 10019</h5>
+		 	   	<h5></h5>
 				<iframe width="100%" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Executive+Conference+Center,+1601+Broadway,+New+York,+NY,+10019&amp;hl=en&amp;sll=40.697488,-73.979681&amp;sspn=0.656979,0.75119&amp;hq=Executive+Conference+Center,&amp;hnear=1601+Broadway,+New+York,+10019&amp;t=m&amp;ie=UTF8&amp;cid=2681318677231784850&amp;ll=40.760431,-73.98512&amp;spn=0.0026,0.006866&amp;z=17&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?q=Executive+Conference+Center,+1601+Broadway,+New+York,+NY,+10019&amp;hl=en&amp;sll=40.697488,-73.979681&amp;sspn=0.656979,0.75119&amp;hq=Executive+Conference+Center,&amp;hnear=1601+Broadway,+New+York,+10019&amp;t=m&amp;ie=UTF8&amp;cid=2681318677231784850&amp;ll=40.760431,-73.98512&amp;spn=0.0026,0.006866&amp;z=17&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
 			</div>
+			
 		</div>
 		
 		<!--
@@ -168,12 +178,12 @@
 		</div>
 		-->
 		
-		<div class="row">
+		<div class="row" id="anchor-about">
 			<div class="hover_title">
 				want to volunteer?
 			</div>
 			<div class="used-to-be-small-9 small-centered columns white">
-				<h5><a href="mailto:volunteers@forpythonquants.com">volunteers@forpythonquants.com</a></h5>
+				<a class="email_with_style" href="mailto:volunteers@forpythonquants.com">volunteers@forpythonquants.com</a>
 			</div>
 		</div>
 		
@@ -182,11 +192,12 @@
 				questions?
 			</div>
 			<div class="used-to-be-small-9 small-centered columns white">
-				<h5><a href="mailto:info@forpythonquants.com">info@forpythonquants.com<a/></h5>
+				<a class="email_with_style" href="mailto:info@forpythonquants.com">info@forpythonquants.com<a/>
 			</div>
 		</div>
 		
 		<script src="js/vendor/jquery.js"></script>
+		<script src="js/vendor/jquery.easing.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/foundation.min.js"></script>
 		<script src="js/modernizr.js"></script>
