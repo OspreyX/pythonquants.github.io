@@ -307,16 +307,26 @@ form input[type=email] {
 }
 
 form .button {
+	display: inline-block !important;
 	background-color: #3772a3 !important;
+	border-radius: 0 !important;
 }
 .button:hover {
 	background-color: #5e9cd0 !important;
 }
 
 form input[type=email]:focus {
-	background: white;
-	box-shadow: 0 0 10px white;
-	border-color: white;
+	background: white !important;
+	box-shadow: 0 0 10px white !important;
+	border-color: white !important;
+}
+
+#mc_embed_signup form {
+	padding: 0 !important;
+}
+
+#mc_embed_signup input.email {
+	margin: 0 !important;
 }
 
 
