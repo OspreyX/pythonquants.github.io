@@ -74,8 +74,8 @@ table td {
 	text-align: center;
 }
 th.time {
-	font-size: 16px;
-	color: #333;
+	font-size: 14px;
+	color: #888;
 	font-weight: 200;
 }
 th.heading {
@@ -84,15 +84,16 @@ th.heading {
 	color: #555;
 	text-align: center;
 }
-td.break { color: #888; letter-spacing: 1em; }
+td.break { color: #888; font-style: italic; }
 
 a#register { font-size: 32px }
 a#volunteer { font-size: 32px }
 a#questions { font-size: 32px }
 
 #twitter-widget-0 { width: 100% !important; height: 250px !important }
-
-
+p.keynote, p.talk, p.workshop { margin-bottom: 0; padding-bottom: 0 }
+p.keynote, p.talk, p.workshop { font-style: italic; font-weight: bold; font-size: 13px; }
+p.speaker { font-size: 14px }
 
 
 
@@ -342,51 +343,3 @@ a.anchor {
 	font-size: 20px;
 	letter-spacing: 0.1em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
