@@ -23,6 +23,7 @@ h4 {
 }
 
 body {
+	min-width: 1000px;
 	background-color: #F2F6FF;
 	font-weight: 200;
 }
