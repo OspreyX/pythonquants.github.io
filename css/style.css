@@ -86,14 +86,47 @@ th.heading {
 }
 td.break { color: #888; font-style: italic; }
 
+tr, td {
+	background: white !important;
+}
+
+td.event {
+	border-radius: 3px;
+}
+td.event.talk {
+	background-color: #c5daea !important;
+	color: #42718e;
+}
+
+td.event.workshop {
+	background-color: #bee0b4 !important;
+	color: #418726;
+}
+
+
 a#register { font-size: 32px }
 a#volunteer { font-size: 32px }
 a#questions { font-size: 32px }
 
 #twitter-widget-0 { width: 100% !important; height: 250px !important }
 p.keynote, p.talk, p.workshop { margin-bottom: 0; padding-bottom: 0 }
-p.keynote, p.talk, p.workshop { font-style: italic; font-weight: bold; font-size: 13px; }
-p.speaker { font-size: 14px }
+p.keynote, p.talk, p.workshop { font-weight: bold; }
+/*p.speaker {  }*/
+
+td p {
+	margin: 0;
+	font-size: 14px;
+}
+
+tr:nth-child(2n+2) > td,
+tr:nth-child(2n+2) > .time {
+	border-top: 1px dotted #ddd;
+}
+
+tr:nth-child(2n+3) > td,
+tr:nth-child(2n+3) > .time {
+	border-top: 1px dotted #eee;
+}
 
 
 
@@ -221,11 +254,12 @@ body > .row + .row {
 	margin: 0 0 0 30px;
 	width: 0;
 	overflow: hidden;
-	line-height: 40px;
+	line-height: 44px;
+	font-size: 24px;
 }
 
 .magic_arrow.eventbrite:hover > .url {
-	width: 240px;
+	width: 320px;
 	height: auto;
 }
 
