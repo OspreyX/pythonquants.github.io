@@ -172,6 +172,7 @@ body > .row + .row {
 }
 
 .fullrow.header-title {
+	min-width: 1000px;
 	background-color: #3772a3;
 }
 
@@ -187,6 +188,7 @@ body > .row + .row {
 }
 
 .fullrow.header-info {
+	min-width: 1000px;
 	background-color: #5e9cd0;
 }
 
