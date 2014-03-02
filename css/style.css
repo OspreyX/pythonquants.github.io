@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2:300italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
 h1, h2, h3 { margin: 0; padding: 0 }
 h1, h2 { text-align: center; }
 h2, h3 { 
@@ -69,10 +72,11 @@ caption {
     padding-top: 15px;
 }
 
-div#about p {
+div#about p, div#event p {
     font-size: 1.25rem;
-	font-family: 'Exo-2', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-style: italic;
+	line-height: 175%;
 }
 
 table td {
@@ -103,21 +107,60 @@ td.event.talk {
     background-color: #c5daea !important;
     color: #42718e;
 }
-
 td.event.workshop {
     background-color: #bee0b4 !important;
     color: #418726;
 }
-
 
 a#register { font-size: 32px }
 a#volunteer { font-size: 32px }
 a#questions { font-size: 32px }
 
 #twitter-widget-0 { width: 100% !important; height: 250px !important }
-p.keynote, p.talk, p.workshop { margin-bottom: 0; padding-bottom: 0 }
+p.keynote, p.talk, p.workshop { margin: 0 10px 0 10px; padding-bottom: 0; font-size: 14pt }
 p.keynote, p.talk, p.workshop { font-weight: bold; }
-/*p.speaker {  }*/
+
+p.bio { 
+	font-family: 'Lato', sans-serif;
+	margin: 10px 30px 5px 30px;
+	font-size: 12pt;
+	font-style: italic;
+	text-align: justify;
+}
+
+img.speaker {
+	margin: 10px 10px 0px 30px;
+	float: left;
+}
+
+ul.speaker-links {
+	list-style-type: none !important;
+	font-size: 10pt !important;
+	margin: 0;
+	padding: 0;
+}
+
+ul.speaker-links li {
+	display: inline-block;
+}
+
+td.event.talk ul.speaker-links a { 
+	text-decoration: underline;
+	font-weight: bold; 
+	color: #42718e;
+}
+td.event.workshop ul.speaker-links a {
+	text-decoration: underline;
+	font-weight: bold; 
+	color: #418726;
+}
+
+ul.panel-topics {
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	list-style-type: none !important;
+	font-size: 10pt !important;
+}
 
 td p {
     margin: 0;
