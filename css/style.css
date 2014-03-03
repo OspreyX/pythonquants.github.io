@@ -447,3 +447,9 @@ ul#sponsors li {
     background-color: white;
     border: 1px double #ddd;
 }
+
+p#register {
+    font-size: 30pt;
+	font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
