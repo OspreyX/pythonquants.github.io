@@ -128,7 +128,7 @@ p.bio {
 	text-align: justify;
 }
 
-img.speaker {
+img.speaker, img.keynoter {
 	margin: 10px 10px 0px 30px;
 	float: left;
 }
