@@ -448,6 +448,10 @@ ul#sponsors li {
     border: 1px double #ddd;
 }
 
+img.sponsor {
+	padding: 5px;
+}
+
 p#register {
     font-size: 30pt;
 	font-family: 'Lato', sans-serif;
